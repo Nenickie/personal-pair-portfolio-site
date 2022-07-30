@@ -1,62 +1,88 @@
-#navbar{
- width: 100%;
- height: 60px;
- background-color: black;
- position:fixed; 
+#navbar {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
 }
-#navbar ul{
-  float: right;
-  list-style: none;
-  margin: 0;
-  padding-top: 20px;
+
+    #navbar ul {
+        float: right;
+        list-style: none;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+        #navbar ul li {
+            display: inline;
+            text-align: center;
+            padding-right: 30px;
+        }
+
+            #navbar ul li a {
+                text-decoration: none;
+                font-size: 20px;
+                color: lightgrey;
+                text-transform: capitalize;
+                font-weight: 600;
+            }
+
+#welcome-section {
+    height: 100vh;
+    background-color: lightsteelblue;
 }
-#navbar ul li{
-  display: inline;
-  text-align: center;
-  padding-right: 30px;
+
+.profile {
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    padding: 8px;
+    width: 200px;
 }
-#navbar ul li a{
-  text-decoration:none;
-  font-size: 20px;
-  color: lightgrey;
-  text-transform: capitalize;
-  font-weight:600;
-  }
-  #welcome-section{
-    height:100vh;
-    background-color:orange;
-  }
-  #welcome-section .hero{
-    text-align:center;
-    position: relative;
-    top:50%;
-    font-family:serif;
-  }
-  #heading{
-    text-align: center; 
-  }
-  
- .project-tile{
-   float:left;
-   width:50%;
+
+#welcome-section .hero {
+    text-align: center;
+    font-family: serif;
+}
+    #welcome-section .hero h1 {
+        font-size: 40px;
+    }
+#welcome-section .hero h2{
+    font-size: 30px;
+}
+#welcome-section .hero p{
+    font-size: 20px;
+}
+
+#projects{
+    background-color: lightgoldenrodyellow;
+}
+#heading {
+    text-align: center;
+    color: purple;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+}
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
    
- }
-#profile-link{
- text-align:center;
-}
-#profile-link button{
-  width:80px;
-  height:30px;
-  background-color:orange;
 
+.project-landing {
+    width: 750px;
+    height: 300px;
 }
-#profile-link button a{
-  text-decoration:none;
-  color: black;
+    .project-landing img {
+        width: 100%;
+        height: auto;
+    }
 
-}
 @media only screen and (max-width: 600px) {
     .columns {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
+
